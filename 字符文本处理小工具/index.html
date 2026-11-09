@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextToolBox / 文本工具盒 - 清理乱码、去空行、全角转半角、文本比对</title>
+    <meta name="description" content="TextToolBox 文本工具盒，提供 PDF 复制文字乱码清理、去空行、全角转半角、文本比对等实用功能，适合处理网页复制内容、微信记录和文档整理。" />
+    <meta name="keywords" content="TextToolBox,文本工具盒,文本处理工具,清理乱码,去空行,全角转半角,文本比对,文字差异对比,PDF复制文字换行清理" />
+    <meta property="og:title" content="TextToolBox / 文本工具盒 - 清理乱码、去空行、全角转半角" />
+    <meta property="og:description" content="处理 PDF 复制文字异常换行、乱码符号、全角空格和文本差异比对的在线工具。" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TextToolBox / 文本工具盒",
+        "url": "https://example.com/",
+        "description": "提供清理乱码、去空行、全角转半角和文本比对等文本处理工具。",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://example.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "PDF 复制文字为什么会出现很多换行？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PDF 复制内容常常会保留页面排版和列布局信息，导致一段文字被拆成多行、出现多余空格或换行符。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如何清理网页复制文本中的乱码和空白？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以先使用清理乱码工具去掉异常符号和控制字符，再用去空行工具删除重复换行和空白内容。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "全角字符怎么转成半角？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "在全角转半角工具中粘贴文本后点击转换即可，将全角空格、标点和字符统一为半角格式。"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">T</span>
+          <span data-i18n="site.name">文本工具盒</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章中心</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <span class="eyebrow" data-i18n="home.eyebrow">文本处理工具</span>
+            <h1 data-i18n="home.heroTitle">清理乱码、去除空行、全角转半角</h1>
+            <p class="lead" data-i18n="home.heroLead">
+              面向 PDF 复制文字、网页复制内容、微信聊天记录和文档整理等常见场景，帮助你快速处理异常符号、空白行和全角格式，让文本更适合复制、整理和校对使用。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/tools/clean-garbled.html" data-i18n="home.btnPrimary">清理乱码工具</a>
+              <a class="btn" href="/tools/text-diff.html" data-i18n="home.btnSecondary">文本比对工具</a>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <h3 data-i18n="home.commonTitle">常见文本问题</h3>
+            <div class="kpi-list">
+              <div class="kpi-card">
+                <strong data-i18n="home.commonProblemLabels.pdf">PDF</strong>
+                <span data-i18n="home.commonProblems.0">复制后多余换行</span>
+              </div>
+              <div class="kpi-card">
+                <strong data-i18n="home.commonProblemLabels.web">网页</strong>
+                <span data-i18n="home.commonProblems.1">隐藏空格和乱码</span>
+              </div>
+              <div class="kpi-card">
+                <strong data-i18n="home.commonProblemLabels.full">全角</strong>
+                <span data-i18n="home.commonProblems.2">标点和空格统一</span>
+              </div>
+              <div class="kpi-card">
+                <strong data-i18n="home.commonProblemLabels.compare">校对</strong>
+                <span data-i18n="home.commonProblems.3">差异对比查看</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="home.toolTitle">常用文本处理工具</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <span class="badge">PDF / 网页</span>
+              <h3><a href="/tools/clean-garbled.html" data-i18n="home.topCards.clean.title">清理乱码字符</a></h3>
+              <p data-i18n="home.topCards.clean.desc">适合处理 PDF、网页和微信复制内容中出现的异常符号、替换字符和杂乱空格。</p>
+              <a href="/tools/clean-garbled.html" data-i18n="home.topCards.clean.action">进入工具 →</a>
+            </article>
+            <article class="card">
+              <span class="badge">文本整理</span>
+              <h3><a href="/tools/remove-blank-lines.html" data-i18n="home.topCards.remove.title">去除空行和多余换行</a></h3>
+              <p data-i18n="home.topCards.remove.desc">清理多余空白行、重复换行和空白内容，方便后续编辑和复制使用。</p>
+              <a href="/tools/remove-blank-lines.html" data-i18n="home.topCards.remove.action">进入工具 →</a>
+            </article>
+            <article class="card">
+              <span class="badge">格式统一</span>
+              <h3><a href="/tools/fullwidth-halfwidth.html" data-i18n="home.topCards.full.title">全角转半角</a></h3>
+              <p data-i18n="home.topCards.full.desc">将中文全角空格、标点和字符快速转换为半角，提升文本规范性。</p>
+              <a href="/tools/fullwidth-halfwidth.html" data-i18n="home.topCards.full.action">进入工具 →</a>
+            </article>
+            <article class="card">
+              <span class="badge">版本校对</span>
+              <h3><a href="/tools/text-diff.html" data-i18n="home.topCards.diff.title">文本比对</a></h3>
+              <p data-i18n="home.topCards.diff.desc">对比两段文字差异，便于版本检查、文案修订和内容审核。</p>
+              <a href="/tools/text-diff.html" data-i18n="home.topCards.diff.action">进入工具 →</a>
+            </article>
+          </div>
+          <div class="section-header" style="margin-top: 28px;">
+            <h2 data-i18n="home.quickTitle">按使用场景选择</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3><a href="/tools/" data-i18n="home.topCards.all.title">全部工具分类</a></h3>
+              <p data-i18n="home.topCards.all.desc">查看所有文本处理工具，方便按问题类型快速定位。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/" data-i18n="home.topCards.article.title">文章中心</a></h3>
+              <p data-i18n="home.topCards.article.desc">查看 PDF、网页复制和微信文本相关的问答与解决方案。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/pdf-copy-text-extra-newlines.html" data-i18n="home.topCards.pdf.title">PDF 复制文字换行问题</a></h3>
+              <p data-i18n="home.topCards.pdf.desc">了解为什么复制 PDF 时会出现大量空行和换行乱码。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/wechat-copy-garbled-text.html" data-i18n="home.topCards.wechat.title">微信乱码处理</a></h3>
+              <p data-i18n="home.topCards.wechat.desc">适合处理聊天记录中的乱码符号和复制后的异常空白。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col">
+          <div class="panel">
+            <div class="section-header">
+              <h2 data-i18n="home.scenarios.title">常见搜索场景</h2>
+            </div>
+            <ul class="feature-list">
+              <li data-i18n="home.scenarios.list.0">PDF 复制文字出现很多多余换行怎么办</li>
+              <li data-i18n="home.scenarios.list.1">微信复制文本中有乱码符号如何批量处理</li>
+              <li data-i18n="home.scenarios.list.2">全角字符如何快速转成半角</li>
+              <li data-i18n="home.scenarios.list.3">两段文字怎么快速比对差异</li>
+              <li data-i18n="home.scenarios.list.4">网页复制内容里有大量多余空格如何清理</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="section-header">
+              <h2 data-i18n="home.useCases.title">适合的使用场景</h2>
+            </div>
+            <ul class="side-list">
+              <li data-i18n="home.useCases.list.0">整理转码后的文档内容</li>
+              <li data-i18n="home.useCases.list.1">清洗聊天记录和复制粘贴文字</li>
+              <li data-i18n="home.useCases.list.2">规范表格和 CSV 数据字段</li>
+              <li data-i18n="home.useCases.list.3">快速检查文案修改差异</li>
+              <li data-i18n="home.useCases.list.4">减少 PDF 和网页复制文本中的噪音</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="home.searchIntent.title">高意图搜索入口</h2>
+          </div>
+          <div class="two-col">
+            <div class="panel">
+              <ul class="feature-list">
+                <li data-i18n="home.searchIntent.item1">PDF 复制后出现大量换行怎么处理</li>
+                <li data-i18n="home.searchIntent.item2">微信复制内容乱码和空白怎么清理</li>
+                <li data-i18n="home.searchIntent.item3">网页复制文本里隐藏空格怎么快速去掉</li>
+                <li data-i18n="home.searchIntent.item4">全角字符怎么批量转半角</li>
+                <li data-i18n="home.searchIntent.item5">两版文案怎么快速对比差异</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="section-header">
+                <h3 data-i18n="home.toolFlow.title">推荐清洗路径</h3>
+              </div>
+              <ul class="article-list">
+                <li data-i18n="home.toolFlow.item1">复制文本 → 清理乱码 → 去空行 → 全角转半角</li>
+                <li data-i18n="home.toolFlow.item2">PDF / 网页 / 微信问题统一先做字符清理</li>
+                <li data-i18n="home.toolFlow.item3">文案修订前使用文本比对精准锁定改动</li>
+                <li data-i18n="home.toolFlow.item4">在文章中心查看对应问题的具体解决方案</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="home.faqTitle">常见问题与解决方案</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3><a href="/blog/pdf-copy-text-extra-newlines.html" data-i18n="home.topCards.pdf.title">复制 PDF 文字总是多出很多换行符怎么办？</a></h3>
+              <p data-i18n="home.topCards.pdf.desc">介绍为什么 PDF 复制文字会出现异常换行，以及如何用一键工具进行清理。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/webpage-copy-text-extra-space.html" data-i18n="home.guideCards.1.title">从网页复制下来的文字有大量多余空格如何清理</a></h3>
+              <p data-i18n="home.guideCards.1.desc">讲解网页复制内容里的空格、换行和隐藏字符来源，以及批量清理方法。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/wechat-copy-garbled-text.html" data-i18n="home.guideCards.2.title">微信复制文字有乱码符号怎么处理</a></h3>
+              <p data-i18n="home.guideCards.2.desc">适合处理聊天记录、转发内容中的多余符号与异常空白。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/fullwidth-to-halfwidth.html" data-i18n="home.guideCards.3.title">全角字符怎么转成半角？常见问题整理</a></h3>
+              <p data-i18n="home.guideCards.3.desc">适合文档规范化、表格整理和复制文本的格式统一场景。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/text-diff-usage.html" data-i18n="home.guideCards.4.title">两段文字怎么快速比对差异？</a></h3>
+              <p data-i18n="home.guideCards.4.desc">介绍文本比对工具的实际使用方式和内容校对思路。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/clean-text-noise.html" data-i18n="home.guideCards.5.title">从复制文案到清洁文本：噪音字符怎么去掉</a></h3>
+              <p data-i18n="home.guideCards.5.desc">总结常见文本噪音来源和处理顺序，适合日常资料整理。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="home.faqHeader">常见问题 FAQ</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary data-i18n="home.faq1">清理乱码会不会删掉正常中文？</summary>
+              <p data-i18n="home.faq1Ans">不会。工具只会去掉常见乱码符号、控制字符和重复空白，正常中文内容会保留。</p>
+            </details>
+            <details>
+              <summary data-i18n="home.faq2">全文字转换后如何恢复？</summary>
+              <p data-i18n="home.faq2Ans">全角转半角不是数据还原，而是规范格式转换。若有需要，建议先保留原文副本再处理。</p>
+            </details>
+            <details>
+              <summary data-i18n="home.faq3">适合处理 PDF 复制内容吗？</summary>
+              <p data-i18n="home.faq3Ans">适合。尤其适合处理 PDF、网页、微信复制后的噪音字符、重复空行和全角空格。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

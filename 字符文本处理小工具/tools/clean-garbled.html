@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清理乱码字符工具 | PDF/网页复制文本处理</title>
+    <meta name="description" content="清理乱码字符工具，适合处理 PDF 复制文字、网页复制内容和微信聊天记录中的异常符号、空白字符和重复换行。" />
+    <meta property="og:title" content="清理乱码字符工具" />
+    <meta property="og:description" content="批量清理 PDF、网页和微信复制文本中的乱码符号与多余空白" />
+    <link rel="canonical" href="https://example.com/tools/clean-garbled.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body data-tool="clean-garbled">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="面包屑导航">
+            <a href="/">首页</a>
+            <span class="sep">/</span>
+            <a href="/tools/">工具分类</a>
+            <span class="sep">/</span>
+            <span>清理乱码工具</span>
+          </nav>
+          <h1 data-i18n="tools.cleanTitle">清理乱码字符工具</h1>
+          <p class="lead" data-i18n="tools.cleanLead">适合处理 PDF 复制文字、网页复制内容和微信聊天记录中的异常符号、替换字符、无效空白和多余换行。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container tool-layout">
+          <div class="tool-box">
+            <label for="sourceText"><strong data-i18n="tools.cleanPage.inputLabel">待处理文本</strong></label>
+            <textarea id="sourceText" data-i18n-placeholder="tools.cleanPlaceholder" placeholder="把含有乱码的内容粘贴进来..."></textarea>
+
+            <div class="tool-actions">
+              <button class="btn btn-primary" id="runAction" data-i18n="tools.cleanBtn">清理乱码</button>
+              <button class="btn" id="copyAction" data-i18n="tools.cleanPage.copy">复制结果</button>
+              <button class="btn" id="clearAction" data-i18n="tools.cleanPage.clear">清空</button>
+            </div>
+
+            <label for="resultText"><strong data-i18n="tools.cleanResult">处理结果</strong></label>
+            <div id="resultText" class="output-box" aria-live="polite"></div>
+          </div>
+
+          <aside class="side-box">
+            <h3 data-i18n="tools.cleanPage.scenarioTitle">适用场景</h3>
+            <ul class="inline-list">
+              <li data-i18n="tools.cleanPage.scenarioItems.0">PDF 复制文字出现大量乱码</li>
+              <li data-i18n="tools.cleanPage.scenarioItems.1">网页内容带有异常符号</li>
+              <li data-i18n="tools.cleanPage.scenarioItems.2">微信聊天记录混入替换字符</li>
+              <li data-i18n="tools.cleanPage.scenarioItems.3">修正多余空格和重复换行</li>
+            </ul>
+
+            <h3 data-i18n="tools.cleanPage.faqTitle">FAQ</h3>
+            <div class="faq-list">
+              <details open>
+                <summary data-i18n="tools.cleanPage.faq1">能清理哪些乱码？</summary>
+                <p data-i18n="tools.cleanPage.faq1Ans">主要处理替换字符、无效控制符、异常空格、重复换行等常见噪音内容。</p>
+              </details>
+              <details>
+                <summary data-i18n="tools.cleanPage.faq2">是否会损坏正常内容？</summary>
+                <p data-i18n="tools.cleanPage.faq2Ans">正常中文、英文和数字会被保留，工具只处理明显异常字符和多余空白。</p>
+              </details>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card">
+              <h3 data-i18n="tools.cleanPage.commonTitle">常见问题</h3>
+              <ul>
+                <li data-i18n="tools.cleanPage.commonIssues.0">复制 PDF 文本后出现大量乱码和断行</li>
+                <li data-i18n="tools.cleanPage.commonIssues.1">微信聊天记录里有很多不识别的符号</li>
+                <li data-i18n="tools.cleanPage.commonIssues.2">网页复制内容被混入广告和隐藏空白字符</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3 data-i18n="tools.cleanPage.docsTitle">相关文档</h3>
+              <ul>
+                <li><a href="/blog/pdf-copy-text-extra-newlines.html" data-i18n="tools.cleanPage.docs.0">PDF 复制文本多余换行怎么办</a></li>
+                <li><a href="/blog/wechat-copy-garbled-text.html" data-i18n="tools.cleanPage.docs.1">微信乱码怎么处理</a></li>
+                <li><a href="/blog/hidden-space-copy-text.html" data-i18n="tools.cleanPage.docs.2">复制文本里大量隐藏空格怎么去掉</a></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3 data-i18n="tools.cleanPage.toolchainTitle">相关工具链</h3>
+              <ul>
+                <li><a href="/tools/remove-blank-lines.html" data-i18n="tools.cleanPage.toolchain.0">去空行工具</a></li>
+                <li><a href="/tools/fullwidth-halfwidth.html" data-i18n="tools.cleanPage.toolchain.1">全角转半角工具</a></li>
+                <li><a href="/tools/text-diff.html" data-i18n="tools.cleanPage.toolchain.2">文本比对工具</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/tools.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>复制 PDF 文字总是多出很多换行符怎么办？</title>
+    <meta name="description" content="复制 PDF 文字总是多出很多换行符怎么办？介绍 PDF 复制文本异常换行的原因，以及一键清理方法。" />
+    <meta property="og:title" content="复制 PDF 文字总是多出很多换行符怎么办？" />
+    <meta property="og:description" content="了解 PDF 复制文本多余换行的原因，并使用在线工具快速清理" />
+    <link rel="canonical" href="https://example.com/blog/pdf-copy-text-extra-newlines.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章中心</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="article">
+      <div class="container article-body">
+        <h1 data-i18n="article.pdf.title">复制 PDF 文字总是多出很多换行符怎么办？</h1>
+        <p data-i18n="article.pdf.p1">很多人复制 PDF 里的文字后，会发现文本除了正常内容外，还夹杂大量换行、空行或者乱码符号。这通常不是原文真的分段很多，而是 PDF 解析时记录了隐藏的换行标记和列布局信息。</p>
+
+        <h2 data-i18n="article.pdf.h2_1">为什么会出现多余换行</h2>
+        <p data-i18n="article.pdf.p2">PDF 是以页面布局为核心的格式，复制时常会保留页面排版信息。列、段落、行末空白以及编码问题，都会导致原本一句话被拆成多行，或者出现多余空格、符号和换行。</p>
+
+        <h2 data-i18n="article.pdf.h2_2">常见修复方法</h2>
+        <ul>
+          <li data-i18n="article.pdf.li1">先用“清理乱码”工具去掉异常符号和非正常空白字符</li>
+          <li data-i18n="article.pdf.li2">再用“去空行”工具删除多余的空白行和重复换行</li>
+          <li data-i18n="article.pdf.li3">若内容中包含全角空格或中文全角标点，可再用“全角转半角”工具统一格式</li>
+        </ul>
+
+        <h2 data-i18n="article.pdf.h2_3">最实用的方案</h2>
+        <p data-i18n-html="article.pdf.p3">如果你只是想快速整理复制文本，最省时的方法是直接把内容粘贴到本站的 <a href="/tools/clean-garbled.html">清理乱码工具</a>，再经过 <a href="/tools/remove-blank-lines.html">去空行工具</a>，最终得到干净可复制的版本。</p>
+
+        <h2 data-i18n="article.pdf.faq">FAQ</h2>
+        <p><strong data-i18n="article.pdf.q1">Q：这样处理后会不会丢字？</strong><br /><span data-i18n="article.pdf.a1">A：通常不会。工具主要去除异常换行、空白和乱码符号，正常文字会保留。</span></p>
+        <p><strong data-i18n="article.pdf.q2">Q：适合会议纪要和 PDF 资料整理吗？</strong><br /><span data-i18n="article.pdf.a2">A：特别适合。很多会议资料和论文文本都适合用这类方法快速清理。</span></p>
+      </div>
+
+      <div class="container section">
+        <div class="section-header">
+          <h2 data-i18n="article.pdf.related">相关工具</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3><a href="/tools/clean-garbled.html">清理乱码工具</a></h3>
+            <p>适合处理 PDF、网页和微信中出现的乱码字符与多余空白。</p>
+          </article>
+          <article class="card">
+            <h3><a href="/tools/remove-blank-lines.html">去空行工具</a></h3>
+            <p>批量删除重复换行和空白行，让复制文本更整洁。</p>
+          </article>
+          <article class="card">
+            <h3><a href="/tools/fullwidth-halfwidth.html">全角转半角工具</a></h3>
+            <p>统一全角空格和标点，保证文档格式更规范。</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

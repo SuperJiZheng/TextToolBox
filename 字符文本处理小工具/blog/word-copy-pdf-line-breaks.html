@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word 中复制 PDF 文本断行太多怎么办</title>
+    <meta name="description" content="Word 中复制 PDF 文本断行太多怎么办？总结 PDF、网页和表格复制文本中断行异常的常见原因和处理方法。" />
+    <link rel="canonical" href="https://example.com/blog/word-copy-pdf-line-breaks.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章中心</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="article">
+      <div class="container article-body">
+        <nav class="breadcrumbs" aria-label="面包屑导航">
+          <a href="/">首页</a>
+          <span class="sep">/</span>
+          <a href="/blog/">文章中心</a>
+          <span class="sep">/</span>
+          <span data-i18n="article.wordPdf.title">Word 复制 PDF 断行</span>
+        </nav>
+
+        <h1 data-i18n="article.wordPdf.title">Word 中复制 PDF 文本断行太多怎么办</h1>
+        <p data-i18n="article.wordPdf.p1">很多人把 PDF 或网页内容复制到 Word 后发现，内容被拆成了很多小段，甚至每一行都被强制换行。通常这不是内容本身有问题，而是复制过程中保留了布局信息和隐藏空白字符。</p>
+
+        <h2 data-i18n="article.wordPdf.h2_1">常见原因</h2>
+        <p data-i18n="article.wordPdf.p2">PDF 设计为页面布局而非纯文本，复制时容易把列边距、换页符和段落信息一并带入。如果同时出现乱码字符、空白段落或双倍换行，Word 中会看起来特别散乱。</p>
+
+        <h2 data-i18n="article.wordPdf.h2_2">实用处理流程</h2>
+        <ul>
+          <li data-i18n="article.wordPdf.li1">先用“清理乱码”工具去掉异常字符</li>
+          <li data-i18n="article.wordPdf.li2">再用“去空行”工具消除重复空白行和断行</li>
+          <li data-i18n="article.wordPdf.li3">必要时再统一全角/半角，保证标点和空格风格一致</li>
+        </ul>
+
+        <h2 data-i18n="article.wordPdf.h2_3">为什么不能只在 Word 里手动删</h2>
+        <p data-i18n="article.wordPdf.p3">手动删除每一处断行效率低，而且很容易误删正常段落。一次性清理后再在 Word 中微调，通常更稳妥，也更能保留原文结构。</p>
+
+        <h2 data-i18n="article.wordPdf.h2_4">推荐入口</h2>
+        <p data-i18n-html="article.wordPdf.p4">如果你经常遇到 PDF 复制到 Word 后“每一行都断开”，可以直接先用 <a href="/tools/clean-garbled.html">清理乱码工具</a>，再使用 <a href="/tools/remove-blank-lines.html">去空行工具</a>，最后按需要进行 <a href="/tools/fullwidth-halfwidth.html">全角转半角</a> 处理。</p>
+      </div>
+
+      <div class="container section">
+        <div class="section-header">
+          <h2>相关文章</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3><a href="/blog/pdf-copy-text-extra-newlines.html">复制 PDF 文字总是多出很多换行符怎么办？</a></h3>
+            <p>解释 PDF 复制文本断行和多余换行的背景原因。</p>
+          </article>
+          <article class="card">
+            <h3><a href="/blog/hidden-space-copy-text.html">复制文本里大量隐藏空格怎么去掉</a></h3>
+            <p>定位隐藏空白与无效间距问题的处理方法。</p>
+          </article>
+          <article class="card">
+            <h3><a href="/blog/text-clean-before-diff.html">比对前先清洗文本，为什么更容易看出真实差异</a></h3>
+            <p>说明在修订前先统一文本格式为何更利于审核。</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

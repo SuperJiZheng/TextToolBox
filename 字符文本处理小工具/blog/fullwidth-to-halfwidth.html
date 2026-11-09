@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全角字符怎么转成半角？常见问题整理</title>
+    <meta name="description" content="全角字符怎么转成半角？介绍全角空格、中文标点和字符转半角的方法，适合文档规范化和复制文本整理。" />
+    <meta property="og:title" content="全角字符怎么转成半角" />
+    <meta property="og:description" content="分析全角空格、中文标点和字符转换为半角的方法与常见问题。" />
+    <link rel="canonical" href="https://example.com/blog/fullwidth-to-halfwidth.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="article">
+      <div class="container article-body">
+        <h1 data-i18n="article.fullwidth.title">全角字符怎么转成半角？常见问题整理</h1>
+        <p data-i18n="article.fullwidth.p1">中文文本中常见的全角空格、逗号、句号和括号在复制、转码或网页内容处理中经常残留。它们虽然不影响基本阅读，但会使文本看起来不够规范，尤其在脚本、表格、邮箱和文档整理时更明显。</p>
+
+        <h2 data-i18n="article.fullwidth.h2_1">哪些内容通常需要转换</h2>
+        <ul>
+          <li data-i18n="article.fullwidth.li1">全角空格，常见于网页、Word 和复制文本中</li>
+          <li data-i18n="article.fullwidth.li2">中文括号、逗号和句号等标点</li>
+          <li data-i18n="article.fullwidth.li3">英文数字或字母混排时的全角字符残留</li>
+        </ul>
+
+        <h2 data-i18n="article.fullwidth.h2_2">建议的处理流程</h2>
+        <p data-i18n-html="article.fullwidth.p2">如果文本里同时存在乱码和异常空白，先用 <a href="/tools/clean-garbled.html">清理乱码工具</a> 去除噪音，然后再用 <a href="/tools/fullwidth-halfwidth.html">全角转半角工具</a> 统一规范格式，最后可用 <a href="/tools/remove-blank-lines.html">去空行工具</a> 做一轮整理。</p>
+
+        <h2 data-i18n="article.fullwidth.h2_3">注意事项</h2>
+        <p data-i18n="article.fullwidth.p3">全角转半角主要适用于统一排版格式，并不等于改写文案原意。正常中文内容不会被删除，重点是规范空白和标点。</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

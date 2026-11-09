@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>从复制文案到清洁文本：常见噪音字符怎么去掉</title>
+    <meta name="description" content="从复制文案到清洁文本：总结常见噪音字符、重复换行和空白内容的清理方法，适合文档整理和内容处理。" />
+    <meta property="og:title" content="从复制文案到清洁文本" />
+    <meta property="og:description" content="梳理复制文案里常见噪音字符的清理思路和处理方法。" />
+    <link rel="canonical" href="https://example.com/blog/clean-text-noise.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="article">
+      <div class="container article-body">
+        <h1 data-i18n="article.noise.title">从复制文案到清洁文本：常见噪音字符怎么去掉</h1>
+        <p data-i18n="article.noise.p1">复制文本时，最容易出现的问题并不总是字本身，而是围绕字周边的噪音字符：异常空白、重复换行、乱码符号、全角标点、隐藏空格和控制字符。它们虽然不影响基本内容，但会严重影响阅读、复制和后续处理效率。</p>
+
+        <h2 data-i18n="article.noise.h2_1">常见噪音来源</h2>
+        <ul>
+          <li data-i18n="article.noise.li1">PDF 复制过程中保留版面换行</li>
+          <li data-i18n="article.noise.li2">网页内容中夹杂隐藏空白和广告元素</li>
+          <li data-i18n="article.noise.li3">聊天记录转发出现控制字符或替换符号</li>
+          <li data-i18n="article.noise.li4">全角空格、中文标点和异常符号混杂</li>
+        </ul>
+
+        <h2 data-i18n="article.noise.h2_2">更稳妥的处理思路</h2>
+        <p data-i18n="article.noise.p2">多数情况下，建议按顺序处理：先清理乱码，再去空行，最后统一全角半角和文本格式。这样可以减少误删正常文字以及避免重复清洗。</p>
+
+        <h2 data-i18n="article.noise.h2_3">推荐工具入口</h2>
+        <p data-i18n-html="article.noise.p3"><a href="/tools/clean-garbled.html">清理乱码工具</a>、<a href="/tools/remove-blank-lines.html">去空行工具</a>、<a href="/tools/fullwidth-halfwidth.html">全角转半角工具</a>可以覆盖大部分常见问题。若需要看两版文案差异，可继续使用 <a href="/tools/text-diff.html">文本比对工具</a>。</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本处理工具分类 - 清理乱码、去空行、全角转半角</title>
+    <meta name="description" content="文本处理工具分类页，包含清理乱码、去空行、全角转半角和文本比对等常用工具，适合快速进入对应处理场景。" />
+    <meta property="og:title" content="文本处理工具分类" />
+    <meta property="og:description" content="按场景分类展示清理乱码、去空行、全角转半角和文本比对等文本处理工具。" />
+    <link rel="canonical" href="https://example.com/tools/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">T</span>
+          <span data-i18n="site.name">文本工具盒</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="面包屑导航">
+            <a href="/">首页</a>
+            <span class="sep">/</span>
+            <span>工具分类</span>
+          </nav>
+          <h1 data-i18n="site.title">文本处理工具分类</h1>
+          <p class="lead" data-i18n="toolsIndex.lead">按常见使用场景整理的文本处理工具，适合 PDF 复制文字、网页内容清洗、文档格式统一和文本版本校对。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container card-grid">
+          <article class="card">
+            <span class="badge" data-i18n="catalog.clean.badge">乱码处理</span>
+            <h3><a href="/tools/clean-garbled.html" data-i18n="catalog.clean.title">清理乱码工具</a></h3>
+            <p data-i18n="catalog.clean.desc">适合 PDF、网页和微信复制文本中的异常字符、乱码符号和杂乱空白。</p>
+          </article>
+          <article class="card">
+            <span class="badge" data-i18n="catalog.remove.badge">空白处理</span>
+            <h3><a href="/tools/remove-blank-lines.html" data-i18n="catalog.remove.title">去空行工具</a></h3>
+            <p data-i18n="catalog.remove.desc">批量删除多余空行、重复换行和空白内容，提升文本可读性。</p>
+          </article>
+          <article class="card">
+            <span class="badge" data-i18n="catalog.full.badge">格式统一</span>
+            <h3><a href="/tools/fullwidth-halfwidth.html" data-i18n="catalog.full.title">全角转半角工具</a></h3>
+            <p data-i18n="catalog.full.desc">快速将中文全角空格和标点统一为半角，规范文档格式。</p>
+          </article>
+          <article class="card">
+            <span class="badge" data-i18n="catalog.diff.badge">版本校对</span>
+            <h3><a href="/tools/text-diff.html" data-i18n="catalog.diff.title">文本比对工具</a></h3>
+            <p data-i18n="catalog.diff.desc">对比两段文字差异，定位新增、删除和修改内容。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="toolsIndex.sceneTitle">按场景快速选择</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3><a href="/blog/pdf-copy-text-extra-newlines.html" data-i18n="toolsIndex.card1.title">PDF 复制文字换行异常</a></h3>
+              <p data-i18n="toolsIndex.card1.desc">处理复制 PDF 内容时出现的大量断行和重复空白问题。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/webpage-copy-text-extra-space.html" data-i18n="toolsIndex.card2.title">网页复制文本空格过多</a></h3>
+              <p data-i18n="toolsIndex.card2.desc">清理网页复制内容中的隐藏空格、重复换行和噪音字符。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/wechat-copy-garbled-text.html" data-i18n="toolsIndex.card3.title">微信复制文本乱码怎么处理</a></h3>
+              <p data-i18n="toolsIndex.card3.desc">适合从聊天记录、网页转发和文档中清理异常乱码字符。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/blog/fullwidth-to-halfwidth.html" data-i18n="toolsIndex.card4.title">全角字符怎么转半角</a></h3>
+              <p data-i18n="toolsIndex.card4.desc">关注全角空格、中文标点和中英文混排时的规范转换方法。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col">
+          <div class="panel">
+            <div class="section-header">
+              <h2 data-i18n="toolsIndex.browseByObject.title">按处理对象浏览</h2>
+            </div>
+            <ul class="feature-list">
+              <li data-i18n="toolsIndex.browseByObject.items.0">PDF 文本：清理换行、空白和乱码</li>
+              <li data-i18n="toolsIndex.browseByObject.items.1">网页复制：去除隐藏空格和重排版残留</li>
+              <li data-i18n="toolsIndex.browseByObject.items.2">微信消息：去掉异常符号与聊天转发噪音</li>
+              <li data-i18n="toolsIndex.browseByObject.items.3">文档和表格：统一全角标点与空白格式</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="section-header">
+              <h2 data-i18n="toolsIndex.processOrder.title">处理顺序建议</h2>
+            </div>
+            <ol class="article-list">
+              <li data-i18n="toolsIndex.processOrder.items.0">先清理异常字符和隐藏空白</li>
+              <li data-i18n="toolsIndex.processOrder.items.1">再删除重复换行和空白段落</li>
+              <li data-i18n="toolsIndex.processOrder.items.2">最后统一全角/半角和版式风格</li>
+              <li data-i18n="toolsIndex.processOrder.items.3">必要时用文本比对检查最终差异</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>比对前先清洗文本，为什么更容易看出真实差异</title>
+    <meta name="description" content="比对前先清洗文本，为什么更容易看出真实差异？说明去乱码、去空行和全角转半角在文本比对前的重要性。" />
+    <link rel="canonical" href="https://example.com/blog/text-clean-before-diff.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章中心</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="article">
+      <div class="container article-body">
+        <nav class="breadcrumbs" aria-label="面包屑导航">
+          <a href="/">首页</a>
+          <span class="sep">/</span>
+          <a href="/blog/">文章中心</a>
+          <span class="sep">/</span>
+          <span data-i18n="article.cleanBeforeDiff.title">比对前先清洗文本</span>
+        </nav>
+
+        <h1 data-i18n="article.cleanBeforeDiff.title">比对前先清洗文本，为什么更容易看出真实差异</h1>
+        <p data-i18n="article.cleanBeforeDiff.p1">文本比对工具很适合看版本差异，但前提是两段文本的结构尽量“干净”。如果其中一段里混入乱码、重复换行、隐藏空格或者全角符号，平台就可能把这些噪音也识别成“差异”，从而让人看不清真实修改内容。</p>
+
+        <h2 data-i18n="article.cleanBeforeDiff.h2_1">什么叫噪音差异</h2>
+        <p data-i18n="article.cleanBeforeDiff.p2">噪音差异通常不是业务内容变化，而是复制粘贴过程中带来的换行、空白和格式问题。它们可能让两个版本看起来“差异很大”，但实际上只是排版不一致。</p>
+
+        <h2 data-i18n="article.cleanBeforeDiff.h2_2">推荐清洗顺序</h2>
+        <ol>
+          <li data-i18n="article.cleanBeforeDiff.li1">先用“清理乱码”去掉异常字符和替换符号</li>
+          <li data-i18n="article.cleanBeforeDiff.li2">再用“去空行”去掉重复空白段落和多余换行</li>
+          <li data-i18n="article.cleanBeforeDiff.li3">最后按需要统一全角/半角，避免标点和空格造成误差</li>
+          <li data-i18n="article.cleanBeforeDiff.li4">再使用“文本比对工具”做最终审核</li>
+        </ol>
+
+        <h2 data-i18n="article.cleanBeforeDiff.h2_3">这样做的好处</h2>
+        <p data-i18n="article.cleanBeforeDiff.p3">清洗后再比对，结果更稳定，真正的新增、删除和修改内容会更容易辨认。尤其在合同、文案修订、说明书校对和文章重写时，这个步骤很重要。</p>
+
+        <h2 data-i18n="article.cleanBeforeDiff.h2_4">推荐工具链</h2>
+        <p data-i18n-html="article.cleanBeforeDiff.p4">可直接从 <a href="/tools/clean-garbled.html">清理乱码工具</a> 开始，然后进入 <a href="/tools/remove-blank-lines.html">去空行工具</a>，最后用 <a href="/tools/text-diff.html">文本比对工具</a> 检查最终版本差异。</p>
+      </div>
+
+      <div class="container section">
+        <div class="section-header">
+          <h2 data-i18n="article.cleanBeforeDiff.related">相关工具</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3><a href="/tools/clean-garbled.html" data-i18n="article.cleanBeforeDiff.card1Title">清理乱码工具</a></h3>
+            <p data-i18n="article.cleanBeforeDiff.card1Desc">去掉异常字符、空白和非文本噪音，适合比对前预处理。</p>
+          </article>
+          <article class="card">
+            <h3><a href="/tools/remove-blank-lines.html" data-i18n="article.cleanBeforeDiff.card2Title">去空行工具</a></h3>
+            <p data-i18n="article.cleanBeforeDiff.card2Desc">删掉重复空白行和无效段落，减少误判范围。</p>
+          </article>
+          <article class="card">
+            <h3><a href="/tools/text-diff.html" data-i18n="article.cleanBeforeDiff.card3Title">文本比对工具</a></h3>
+            <p data-i18n="article.cleanBeforeDiff.card3Desc">在清洗后对照两版内容，精确识别真实修改点。</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+  </body>
+</html>

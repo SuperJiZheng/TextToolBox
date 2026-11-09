@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>去空行工具 | 去掉多余空白行和重复换行</title>
+    <meta name="description" content="去空行工具，可批量去掉多余空白行、重复换行和空白字符，适合处理 PDF、网页、聊天记录和文档整理中的文本噪音。" />
+    <meta property="og:title" content="去空行工具" />
+    <meta property="og:description" content="批量去掉多余空白行和重复换行，让文本更整洁、更适合复制和整理。" />
+    <link rel="canonical" href="https://example.com/tools/remove-blank-lines.html" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body data-tool="remove-blank-lines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/"> <span class="brand-mark">T</span> <span data-i18n="site.name">文本工具盒</span></a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/tools/" data-i18n="nav.tools">工具分类</a>
+          <a href="/tools/clean-garbled.html" data-i18n="nav.clean">清理乱码</a>
+          <a href="/tools/remove-blank-lines.html" data-i18n="nav.remove">去空行</a>
+          <a href="/tools/fullwidth-halfwidth.html" data-i18n="nav.full">全角转半角</a>
+          <a href="/tools/text-diff.html" data-i18n="nav.diff">文本比对</a>
+          <a href="/blog/" data-i18n="nav.article">文章</a>
+        </nav>
+        <div class="lang-switcher" aria-label="language switcher">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="面包屑导航">
+            <a href="/">首页</a>
+            <span class="sep">/</span>
+            <a href="/tools/">工具分类</a>
+            <span class="sep">/</span>
+            <span>去空行工具</span>
+          </nav>
+          <h1 data-i18n="tools.removeTitle">去空行工具在线</h1>
+          <p class="lead" data-i18n="tools.removeLead">批量删除多余空白行、重复换行和空白内容，把混乱文本整理成更适合复制、分发和处理的版本。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container tool-layout">
+          <div class="tool-box">
+            <label for="sourceText"><strong data-i18n="tools.removePage.inputLabel">原始文本</strong></label>
+            <textarea id="sourceText" data-i18n-placeholder="tools.removePlaceholder" placeholder="把需要去空行的文本粘贴进来..."></textarea>
+
+            <div class="tool-actions">
+              <button class="btn btn-primary" id="runAction" data-i18n="tools.removeBtn">去除空行</button>
+              <button class="btn" id="copyAction" data-i18n="tools.removePage.copy">复制结果</button>
+              <button class="btn" id="clearAction" data-i18n="tools.removePage.clear">清空</button>
+            </div>
+
+            <label for="resultText"><strong data-i18n="tools.removePage.resultLabel">处理结果</strong></label>
+            <div id="resultText" class="output-box" aria-live="polite"></div>
+          </div>
+
+          <aside class="side-box">
+            <h3 data-i18n="tools.removePage.useCaseTitle">常见用途</h3>
+            <ul class="inline-list">
+              <li data-i18n="tools.removePage.useCases.0">整理复制来的文案</li>
+              <li data-i18n="tools.removePage.useCases.1">清理长文本中的空行</li>
+              <li data-i18n="tools.removePage.useCases.2">去除 CSV 和清单列表中的空白</li>
+              <li data-i18n="tools.removePage.useCases.3">修正 PDF/网页文本中的断行</li>
+            </ul>
+
+            <h3 data-i18n="tools.removePage.adviceTitle">操作建议</h3>
+            <p class="note" data-i18n="tools.removePage.advice">如果需要保留段落分隔，可以只去重复空行；如果需要更紧凑的文本，则连同空白行一并删除。</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card">
+              <h3 data-i18n="tools.removePage.commonTitle">常见问题</h3>
+              <ul>
+                <li data-i18n="tools.removePage.commonIssues.0">复制内容中出现很多空白段落和重复换行</li>
+                <li data-i18n="tools.removePage.commonIssues.1">PDF 和网页文本断行过多，阅读很费力</li>
+                <li data-i18n="tools.removePage.commonIssues.2">文案整理时需要快速压缩空白但保留结构</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3 data-i18n="tools.removePage.docsTitle">相关文档</h3>
+              <ul>
+                <li><a href="/blog/pdf-copy-text-extra-newlines.html" data-i18n="tools.removePage.docs.0">PDF 复制文本多余换行怎么办</a></li>
+                <li><a href="/blog/hidden-space-copy-text.html" data-i18n="tools.removePage.docs.1">复制文本大量隐藏空格怎么去掉</a></li>
+                <li><a href="/blog/text-clean-before-diff.html" data-i18n="tools.removePage.docs.2">比对前先清洗文本更准确</a></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3 data-i18n="tools.removePage.toolchainTitle">相关工具链</h3>
+              <ul>
+                <li><a href="/tools/clean-garbled.html" data-i18n="tools.removePage.toolchain.0">清理乱码工具</a></li>
+                <li><a href="/tools/fullwidth-halfwidth.html" data-i18n="tools.removePage.toolchain.1">全角转半角工具</a></li>
+                <li><a href="/tools/text-diff.html" data-i18n="tools.removePage.toolchain.2">文本比对工具</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="tools.removePage.relatedTitle">相关工具</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3><a href="/tools/clean-garbled.html" data-i18n="tools.removePage.related.0">清理乱码工具</a></h3>
+              <p data-i18n="tools.removePage.relatedDesc.0">去除异常符号、替换字符和杂乱空白，适合 PDF 和网页复制内容处理。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/tools/fullwidth-halfwidth.html" data-i18n="tools.removePage.related.1">全角转半角工具</a></h3>
+              <p data-i18n="tools.removePage.relatedDesc.1">统一全角空格和中文标点，保证文本格式更规范。</p>
+            </article>
+            <article class="card">
+              <h3><a href="/tools/text-diff.html" data-i18n="tools.removePage.related.2">文本比对工具</a></h3>
+              <p data-i18n="tools.removePage.relatedDesc.2">对比两段文本差异，便于版本校对和内容审核。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> <span data-i18n="site.name">文本工具盒</span></div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/tools.js"></script>
+  </body>
+</html>
